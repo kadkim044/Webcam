@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+}
+.photobooth{
+    width: 99%;
+    margin-top: 0;
+    height: 98%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.photo{
+    width: 90%;
+    height: 60%;
+    margin-left: 40px;
+    margin-top: -40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+a{
+    margin: 0;
+}
