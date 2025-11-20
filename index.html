@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="photo.css">
 </head>
 <body>
-    
+    <div class="photobooth">
+        <div class="controls">
+            <button onclick="takePhoto()">Take Photo</button>
+            <div class="rgb">
+                <label for="rmin">R Min:</label>
+                <input type="range" name="rmin" min="0" max="255">
+                <label for="rmax">R Max:</label>
+                <input type="range" name="rmax" min="0" max="255">
+                <br>
+                <label for="gmin">G Min:</label>
+                <input type="range" name="gmin" min="0" max="255">
+                <label for="gmax">G Max:</label>
+                <input type="range" name="gmax" min="0" max="255">
+                <br>
+                <label for="bmin">B Min:</label>
+                <input type="range" name="bmin" min="0" max="255">
+                <label for="bmax">B Max:</label>
+                <input type="range" name="bmax" min="0" max="255">
+            </div>
+        </div>
+            <canvas class="photo"></canvas>
+            <video class="player" autoplay hidden></video>
+            <div class="strip"></div>
+
+        <audio class="snap" src="finger-snap-sound-423220.mp3" hidden></audio>
+    </div>
     <script src="photo.js"></script>
 </body>
 </html>
